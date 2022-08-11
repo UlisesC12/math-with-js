@@ -36,6 +36,23 @@ function calcularTriangulo(lado1, lado2, base, altura) {
   };
 }
 
+function calcularAlturaTrianguloIsoceles(lado1, base) {
+  if (lado1 == base) {
+    console.warn('No es un triángulo iscocéles');
+  } else {
+    return Math.sqrt((lado1 ** 2) - ((base**2)/(4)));
+  }
+
+}
+
+function calcularAlturaTrianguloEscaleno(lado1, lado2, base) {
+  if((lado1 != lado2) && (lado2 != base) && (lado1 != base)) {
+    return Math.sqrt((lado2**2) - ((lado2**2-lado1**2+base**2)/(2*base))**2);
+  } else {
+    return "No es un triángulo Escaleno!";
+  }
+}
+
 console.log({
   ladoTriangulo1,
   ladoTriangulo2,
