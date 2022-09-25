@@ -13,7 +13,8 @@ function getMode (list) {
         }
     }
 
-    console.log(countList);
+    const arrayList = Object.entries(countList);
+    console.log(countList, arrayList);
 }
 
 function isEven (myList) {
@@ -46,6 +47,17 @@ function getAverage (myList) {
 
     return productionSum / daysWorked; //Average - Produced pieces per day
 } 
+
+function sortBidimensionalList (unorderedList) {
+    function sortMyList(valorAcumulado, nuevoValor) {
+        //TODO: fix it in order to work with 2 dimensons array
+        return valorAcumulado - nuevoValor;
+    }
+
+    const myList = unorderedList.sort(sortMyList)
+
+    return myList;
+}
 
 function sortList (unorderedList) {
     function sortMyList(valorAcumulado, nuevoValor) {
