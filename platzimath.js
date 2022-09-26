@@ -2,6 +2,22 @@ const printedPieces = [40, 50, 12, 34, 20, 23, 10]; //Per day
 const twoDimList = [["a",1],["b",2],["c",3]];
 const twoDimList2 = [["a",100],["b",20],["c",30]];
 const customList = [1,2,3,4,1,'a','abc',13,'abc','abc'];
+const numList = [2,4,6];
+
+function geometricMean (list) {
+    const nthRoot = list.length;
+    const elementsProduct = list.reduce((previousValue, nextValue) => previousValue * nextValue);
+    const gMean = Math.pow(elementsProduct, (1/nthRoot));
+    return gMean;
+}
+function harmonicMean (list) {
+    const nthIndex = list.length;
+    let sum = 0;
+    const inverseSumArr =  list.map(element => sum += 1/element);
+    const inverseSum = inverseSumArr[nthIndex - 1]
+    const hMean = nthIndex / inverseSum;
+    return hMean;
+}
 
 function getMode (list) {
     const countList = {};
@@ -29,7 +45,7 @@ function isEven (myList) {
     return !(myList.length % 2);
 } 
 
-function getMean (myList) {
+function getMedian (myList) {
     const list = sortList(myList)
     const isEvenList = isEven(list);
     if (isEvenList) {
@@ -47,7 +63,7 @@ function getMean (myList) {
 
 }
 
-function getAverage (myList) {
+function getMean (myList) {
     const daysWorked = myList.length;
     const productionSum = myList.reduce(
         (previousValue, currentValue) => previousValue + currentValue
