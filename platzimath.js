@@ -1,4 +1,7 @@
 const printedPieces = [40, 50, 12, 34, 20, 23, 10]; //Per day
+const twoDimList = [["a",1],["b",2],["c",3]];
+const twoDimList2 = [["a",100],["b",20],["c",30]];
+const customList = [1,2,3,4,1,'a','abc',13,'abc','abc'];
 
 function getMode (list) {
     const countList = {};
@@ -14,7 +17,12 @@ function getMode (list) {
     }
 
     const arrayList = Object.entries(countList);
-    console.log(countList, arrayList);
+    const sortedList = sortBidimensionalList(arrayList, 1);
+    const sortedListMode = sortedList[sortedList.length - 1];
+    // console.log({countList, arrayList, sortedList, sortedListMode});
+    // console.log("La moda es: " + sortedListMode);
+    const mode = sortedListMode[0];
+    return mode;
 }
 
 function isEven (myList) {
@@ -50,8 +58,7 @@ function getAverage (myList) {
 
 function sortBidimensionalList (unorderedList) {
     function sortMyList(valorAcumulado, nuevoValor) {
-        //TODO: fix it in order to work with 2 dimensons array
-        return valorAcumulado - nuevoValor;
+        return valorAcumulado[1] - nuevoValor[1];
     }
 
     const myList = unorderedList.sort(sortMyList)
