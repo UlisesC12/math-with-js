@@ -4,13 +4,16 @@ const twoDimList2 = [["a",100],["b",20],["c",30]];
 const customList = [1,2,3,4,1,'a','abc',13,'abc','abc'];
 const numList = [2,4,6];
 
-function geometricMean (list) {
+const PlatziMath = {}; 
+
+PlatziMath.geometricMean = function geometricMean (list) {
     const nthRoot = list.length;
     const elementsProduct = list.reduce((previousValue, nextValue) => previousValue * nextValue);
     const gMean = Math.pow(elementsProduct, (1/nthRoot));
     return gMean;
 }
-function harmonicMean (list) {
+    
+PlatziMath.harmonicMean = function harmonicMean (list) {
     const nthIndex = list.length;
     let sum = 0;
     const inverseSumArr =  list.map(element => sum += 1/element);
@@ -19,7 +22,7 @@ function harmonicMean (list) {
     return hMean;
 }
 
-function getMode (list) {
+PlatziMath.getMode = function getMode (list) {
     const countList = {};
 
     for (let i = 0; i < list.length; i++) {
@@ -41,11 +44,11 @@ function getMode (list) {
     return mode;
 }
 
-function isEven (myList) {
+PlatziMath.isEven = function isEven (myList) {
     return !(myList.length % 2);
 } 
 
-function getMedian (myList) {
+PlatziMath.getMedian = function getMedian (myList) {
     const list = sortList(myList)
     const isEvenList = isEven(list);
     if (isEvenList) {
@@ -63,7 +66,7 @@ function getMedian (myList) {
 
 }
 
-function getMean (myList) {
+PlatziMath.getMean = function getMean (myList) {
     const daysWorked = myList.length;
     const productionSum = myList.reduce(
         (previousValue, currentValue) => previousValue + currentValue
@@ -72,7 +75,7 @@ function getMean (myList) {
     return productionSum / daysWorked; //Average - Produced pieces per day
 } 
 
-function sortBidimensionalList (unorderedList) {
+PlatziMath.sortBidimensionalList = function sortBidimensionalList (unorderedList) {
     function sortMyList(valorAcumulado, nuevoValor) {
         return valorAcumulado[1] - nuevoValor[1];
     }
@@ -82,7 +85,7 @@ function sortBidimensionalList (unorderedList) {
     return myList;
 }
 
-function sortList (unorderedList) {
+PlatziMath.sortList = function sortList (unorderedList) {
     function sortMyList(valorAcumulado, nuevoValor) {
         return valorAcumulado - nuevoValor;
     }
