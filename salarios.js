@@ -1,5 +1,5 @@
-const salarios = [];
-salarios.push({
+const salaries = [];
+salaries.push({
   name: "Juanita",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 250 },
@@ -10,7 +10,7 @@ salarios.push({
     { year: 2023, empresa: "Industrias Mokepon", salario: 1250 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Alex",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 450 },
@@ -21,7 +21,7 @@ salarios.push({
     { year: 2023, empresa: "Industrias Mokepon", salario: 1250 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Nath",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 600 },
@@ -32,7 +32,7 @@ salarios.push({
     { year: 2023, empresa: "MarketerosCOL", salario: 1100 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Julia",
   trabajos: [
     { year: 2018, empresa: "MarketerosCOL", salario: 1000 },
@@ -43,7 +43,7 @@ salarios.push({
     { year: 2023, empresa: "MarketerosCOL", salario: 2000 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Jonatan",
   trabajos: [
     { year: 2019, empresa: "MarketerosCOL", salario: 1000 },
@@ -53,7 +53,7 @@ salarios.push({
     { year: 2023, empresa: "MarketerosCOL", salario: 1000 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Armando",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 750 },
@@ -64,7 +64,7 @@ salarios.push({
     { year: 2023, empresa: "Freelance", salario: 850 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Dilan",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 500 },
@@ -75,7 +75,7 @@ salarios.push({
     { year: 2023, empresa: "Mokepon", salario: 1100 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Zamir",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 400 },
@@ -86,7 +86,7 @@ salarios.push({
     { year: 2023, empresa: "Mokepon", salario: 1200 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Daniela",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 500 },
@@ -97,7 +97,7 @@ salarios.push({
     { year: 2023, empresa: "MarketerosCOL", salario: 850 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Daniel",
   trabajos: [
     { year: 2020, empresa: "Freelance", salario: 150 },
@@ -106,7 +106,7 @@ salarios.push({
     { year: 2023, empresa: "Freelance", salario: 650 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Rigoberto",
   trabajos: [
     { year: 2018, empresa: "MarketerosCOL", salario: 700 },
@@ -117,7 +117,7 @@ salarios.push({
     { year: 2023, empresa: "MarketerosCOL", salario: 750 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Alicia",
   trabajos: [
     { year: 2018, empresa: "Inversionify", salario: 300 },
@@ -128,7 +128,7 @@ salarios.push({
     { year: 2023, empresa: "Freelance", salario: 350 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Teodoro",
   trabajos: [
     { year: 2018, empresa: "Freelance", salario: 600 },
@@ -139,7 +139,7 @@ salarios.push({
     { year: 2023, empresa: "Freelance", salario: 850 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Bruce",
   trabajos: [
     { year: 2018, empresa: "Wayne Enterprises", salario: 4600 },
@@ -150,7 +150,7 @@ salarios.push({
     { year: 2023, empresa: "Wayne Enterprises", salario: 3850 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Alfred",
   trabajos: [
     { year: 2018, empresa: "Wayne Enterprises", salario: 2000 },
@@ -161,7 +161,7 @@ salarios.push({
     { year: 2023, empresa: "Wayne Enterprises", salario: 1500 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Clark Kent",
   trabajos: [
     { year: 2018, empresa: "Daily Planet", salario: 1000 },
@@ -172,7 +172,7 @@ salarios.push({
     { year: 2023, empresa: "Daily Planet", salario: 1500 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Lois Lane",
   trabajos: [
     { year: 2018, empresa: "Daily Planet", salario: 2000 },
@@ -183,7 +183,7 @@ salarios.push({
     { year: 2023, empresa: "Daily Planet", salario: 2500 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Jimmy Olsen",
   trabajos: [
     { year: 2018, empresa: "Daily Planet", salario: 1500 },
@@ -194,7 +194,7 @@ salarios.push({
     { year: 2023, empresa: "Daily Planet", salario: 1500 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Perry White",
   trabajos: [
     { year: 2018, empresa: "Daily Planet", salario: 3500 },
@@ -205,7 +205,7 @@ salarios.push({
     { year: 2023, empresa: "Daily Planet", salario: 4050 },
   ],
 });
-salarios.push({
+salaries.push({
   name: "Lex Luthor",
   trabajos: [
     { year: 2018, empresa: "LexCorp", salario: 5000 },

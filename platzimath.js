@@ -49,8 +49,8 @@ PlatziMath.isEven = function isEven (myList) {
 } 
 
 PlatziMath.getMedian = function getMedian (myList) {
-    const list = sortList(myList)
-    const isEvenList = isEven(list);
+    const list = PlatziMath.sortList(myList)
+    const isEvenList = PlatziMath.isEven(list);
     if (isEvenList) {
         const meanFirstIndex = (list.length / 2) - 1;
         const meanSecondIndex = list.length / 2;
