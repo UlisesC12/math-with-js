@@ -1,7 +1,7 @@
 // console.log(salaries);
 //Salary analysis of Juanita
 function findPerson (searchName) {
-    return salaries.find(person => person.name = searchName);
+    return salaries.find(person => person.name == searchName);
     // salaries.find((persona) => {
     //     return persona.name == searchName;
     // });
@@ -12,7 +12,7 @@ function medianPerPerson(personName){
     const jobs = findPerson(personName).trabajos;
     let salaries = jobs.map(job => job.salario);
     const salariesMedian = PlatziMath.getMedian(salaries);
-    console.log(salaries);
+    // console.log(salaries);
     return salariesMedian;
 }
 
@@ -51,7 +51,7 @@ for (person of salaries) {
             companies[job.empresa][job.year].push(job.salario);
         }
     }
-console.log(companies);
+// console.log(companies);
 
 function medianPerCompany (companyName, year) {
     if(!companies[companyName]){
@@ -90,4 +90,26 @@ function projectionPerCompany (companyName) {
 
     return newSalary;
 }
-projectionPerCompany("Industrias Mokepon");
+
+//General Analysis
+function generalMedian() {
+    const listaMedianas = salaries.map(
+        (persona) => medianPerPerson(persona.name));
+    const mediana = PlatziMath.getMedian(listaMedianas);
+    return mediana;
+}
+
+function top10Medians() { //Top 10% in percentage
+    const medianList = salaries.map(
+        person => medianPerPerson(person.name)
+    );
+
+    const sortedMedians = PlatziMath.sortList(medianList);
+    const qty = medianList.length / 10;
+    const limit = medianList.length - qty;
+    
+    const top10percent = sortedMedians.slice(limit, sortedMedians.length);
+    const medianTop10 = PlatziMath.getMedian(top10percent);
+    
+    console.log(medianTop10);
+}
